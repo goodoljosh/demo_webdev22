@@ -1,5 +1,4 @@
 var express = require('express');
-var mongoose = require('mongoose');
 var app = express();
 var axios = require('axios');
 app.use('/static', express.static("public"));
