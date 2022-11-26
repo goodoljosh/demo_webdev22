@@ -25,7 +25,10 @@ body{
    
 }
 .container h2{
-    color: #ffffff;
+    color: #a70a0a;
+}
+.container b{
+    color: #a70a0a;
 }
 
 img {
