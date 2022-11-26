@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>
-        SSWD Group Project - Demo
+        Group Project API
     </title>
     <link rel="stylesheet" href="/static/stylesheets/styles.css" type="text/css" />
     <script></script>
@@ -10,20 +10,29 @@
     <div class="container">
         <h2>
             <%= data.Title %> 
-            <%= data.Year %> 
         </h2>
         <p>
+            <%= data.Year %> 
+            <br>
             <%= data.Rated %> 
+            <br>
             <%= data.Released %> 
+            <br>
             <%= data.Runtime %> 
+            <br>
             <%= data.Genre %> 
+            <br>
             <%= data.Director %> 
-
+            <br>
             <%= data.Plot %> 
+            <br>
             <%= data.Language %> 
+            <br>
             <%= data.Country %> 
+            <br>
             <%= data.Awards %> 
-            <%= data.Poster %>  
+            <br>
+            <img align= "left" src="<%= data.img %>" alt="<%= data.alt %>" width="300" height="300"  /> 
         </p>
     </div>
 </body>
