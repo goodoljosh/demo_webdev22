@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="/static/stylesheets/styles.css" type="text/css" />
     <script></script>
 </head>
+    <!-- <center>
+        <img src="public/stylesheets/images/OMDB.png" width="300" height="150" />
+    </center> -->
+<br>
 <body>
     <div class="container">
-        <h2>
-            <%= data.Title %> 
-        </h2>
         <img align= "left" src="<%= data.Poster %>" alt="<%= data.alt %>" width="300" height="300"  /> 
+        <br>
+        <h2>
+            <%= data.Title %>
+        </h2>
         <p>
+            <b>_____________________________________________________________________</b>
+            <center>
             <b>Year Released:</b>
             <%= data.Year %> 
             <br>
@@ -32,6 +39,7 @@
             <%= data.Director %> 
             <br>
             <b>Movie Plot:</b>
+            <br>
             <%= data.Plot %> 
             <br>
             <b>Language:</b>
@@ -43,6 +51,7 @@
             <b>Awards:</b>
             <%= data.Awards %> 
             <br>
+            </center>
         </p>
     </div>
 </body>
