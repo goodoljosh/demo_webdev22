@@ -12,6 +12,7 @@
 <br>
 <body>
     <div class="container">
+        <% if(typeof data =='object' && (data.Title > ' ')) { %>
         <img align= "left" src="<%= data.Poster %>" alt="<%= data.alt %>" width="300" height="300"  /> 
         <br>
         <h2>
@@ -53,5 +54,10 @@
             <br>
             </center>
         </p>
+        <% } else{ %>  
+            <script>
+                location.reload(true/false);
+                </script>
+            <% } %>
     </div>
 </body>
