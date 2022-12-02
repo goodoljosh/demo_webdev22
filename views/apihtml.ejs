@@ -11,9 +11,15 @@
     </center> -->
 <br>
 <body>
+    <div class="container-1">
+        <center>
+            <h1>RANDOM MOVIE GENERATOR</h1>
+        </center>
+    </div>
+    <br>
     <div class="container">
         <% if(typeof data =='object' && (data.Title > ' ')) { %>
-        <img align= "left" src="<%= data.Poster %>" alt="<%= data.alt %>" class="flexible"  /> 
+        <img align= "left" src="<%= data.Poster %>" alt="<%= data.alt %>" class="responsive"  /> 
         <br>
         <h2>
             <%= data.Title %>
@@ -54,6 +60,7 @@
             <br>
             </center>
         </p>
+        <button onClick="window.location.reload();">Generate New Movie/Show</button>
         <% } else{ %>  
             <script>
                 location.reload(true/false);
