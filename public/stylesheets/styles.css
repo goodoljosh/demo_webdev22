@@ -46,7 +46,7 @@ p {
     color: #ffffff;
   }
 
-  .responsive {
-    width: 100%;
+  .flexible {
+    width: auto;
     height: auto;
   }
