@@ -7,7 +7,6 @@ function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 } 
 
-//Random number generator variable
 //3896198, number for Guardians of the Galaxy
 app.get('/', function(req, res){
     axios.get('http://www.omdbapi.com/?i=tt'+randomNumber(1000000,3000000)+'&apikey=d1d7d2ee').then(function(response){
